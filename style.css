@@ -1,0 +1,186 @@
+/* FOGLIO DI STILE - Feudi di San Gregorio */
+
+
+/*  RESET BASE  */
+/* Azzera margini e imposta il box model per tutti gli elementi */
+* { box-sizing: border-box; }
+body, html { padding: 0; margin: 0; }
+
+
+/*  BODY  */
+/* font predefinito per tutta la pagina  */
+body { font-family: Times New Roman;background-color: #6a6868f8 }
+
+
+/*  IMMAGINI  */
+/* Le immagini occupano tutta la larghezza del loro contenitore */
+img { width: 100%; height: auto; }
+
+
+/* PARAGRAFI  */
+/* Stile del testo corrente: colore, dimensione e giustificazione */
+p { color: #000; font-size: 25px; text-align: justify; }
+
+
+/*  TITOLI  */
+/* Colore dei titoli h1, h2, h3  */
+h1, h2, h3 { color: #fff; }
+
+
+/* LINK */
+/* Rimozione sottolineatura e settaggio colore dei link */
+a { color: #fff; text-decoration: none; font-size: 25px;}
+
+
+/*  HEADER  */
+/* Colore e settaggio Barra di navigazione in alto */
+header { background: #333; padding: 10px 20px 10px 20px; width: 100%; }
+header li a { font-size: 20px; padding: 10px; }
+
+
+/*  LOGO  */
+/* Posizionamento Nome azienda all' interno dell' header */
+.logo { text-align: center; width: 100%; display: block; font-size: 30px; }
+
+
+/* MENU PRINCIPALE  */
+/* Posizionamento Voci del menu e colore */
+#menu-principale { text-align: center; }
+#menu-principale li { display: inline; font-size: 20px; }
+#menu-principale li a { color: #c9a96e; margin: 20px; }
+
+
+/* CONTENITORE PRINCIPALE  */
+/* Spazio interno attorno al contenuto della pagina */
+.container {
+     padding: 10px;
+     
+} 
+
+/* COVER PRINCIPALE */
+/* Sezione immagine grande con testo sovrapposto */ 
+.cover { position: relative; border-bottom: 10px solid #c9a96e; }
+
+/* Cover sovrapposta a aal cover principale */
+.cover__int {
+    background-color: #394f122c; /* sfondo semi-trasparente */
+    position: absolute; /* si sovrappone all'immagine */
+    bottom: 0; /* ancorato in basso */
+    left: 0;
+    width: 100%;
+    padding: 5px;
+}
+.cover__int h1 { color: #fff; }
+.cover__int p  { color: #fff; font-size: 22px; }
+
+
+/* COVER RIDOTTA PAGINA SOSTENIBILITA' */
+/* Cover più piccola usata nelle pagine interne */
+.cover_small { 
+    position: relative; 
+    height: 300px; 
+    border-bottom: 7px solid #6afa5c;
+}
+
+/* Immagine che riempie tutta la cover ridotta */
+.cover_small img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* ritaglia l'immagine per riempire il contenitore */
+    border-radius: 8px; /* angoli arrotondati */            
+}   
+
+/* Cover sovrapposta alla cover_small */
+.cover_small__int {
+    background-color: #334a3238; /* sfondo semi-trasparente */
+    position: absolute; /* si sovrappone all'immagine */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+
+/* GRIGLIA A TRE COLONNE  */
+/* Usata nella home e nella pagina cantina */
+.grid { display: flex; flex-wrap: wrap; }
+.col-grid { width: 33.33%; padding: 15px; }
+
+
+/* GRIGLIA A DUE COLONNE */
+/* Ogni riga della pagina sostenibilità: testo + immagine affiancati */
+.grid_2 { display: flex; gap: 40px; margin-bottom: 60px; padding: 20px; }
+.grid_2 > div { flex: 1; } /* ogni figlio occupa metà spazio */
+.grid_2 img { width: 100%; height: auto; } /* immagine adattiva */
+.grid_2 p { font-size: 20px; line-height: 1.4; }
+
+/* Sfondo alternato per le righe della pagina sostenibilità */
+.grid_2:nth-child(odd)  { background-color: #494949b9; } /* righe dispari  */
+.grid_2:nth-child(even) { background-color: #2e2e2eb0; } /* righe pari */
+.grid_2 {border-radius: 8px;} /* angoli arrotondati */
+
+
+/* BOTTONE */
+/* Stile unico per tutti i bottoni del sito */
+.btn {
+    display: inline-block;/* si comporta come un bottone */
+    background-color: #c9a96e; 
+    color: black;          
+    padding: 14px 24px; /* spazio interno */
+    text-decoration: none; /* nessuna sottolineatura */
+    margin-top: 20px;  /* spazio sopra il bottone */
+    letter-spacing: 2px; /* lettere distanziate */
+    border-radius: 8px; /* angoli arrotondati */
+    border: 5px solid #f5b743; /* bordo dorato */
+    font-weight: bold; /* testo in grassetto */
+    font-size: 20px; /* dimensione testo */
+    
+}
+
+
+/* FOOTER */
+/* Settaggio Piè di pagina */
+footer { background: #333; padding: 16px; }
+footer p { color: #fff; }
+
+
+/* MEDIA QUERY  */
+
+/* MOBILE (fino a 767px)  */
+@media (max-width: 767px) {
+    /*Gestione Mobile generale*/
+    .col-grid{ width: 100%; } /* colonne a piena larghezza */
+    h1{ font-size: 20px; } /* dimensioni titolo */
+    h2{ font-size: 16px; } /* dimensioni sottotitolo */
+    .cover img { height: 300px; object-fit: cover; }/* cover ridotta */
+    header li a { font-size: 25px; text-align: left; } /* menu allineato a sinistra */
+    #menu-principale li { display: block; padding: 5px ; } /* voci menu una sotto l'altra */
+    footer { background: #333; padding: 10px; }
+    footer p,a { color: #fff; font-size: 16px;}
+
+    /*Gestione Mobile per pagina sostenibilità*/
+    .cover_small__int h1 { font-size: 22px; } /* titolo cover interno ridotto */
+    .cover_small__int h2 { font-size: 18px; } /* sottotitolo cover ridotto */
+    .grid_2 { display: block; } /* colonne in verticale */
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 { font-size: 30px; } /* titolo medio */
+    .col-grid { width: 50%; } /* due colonne invece di tre */
+    header li a { font-size: 25px; } /* menu più grande */
+}
+
+/* DESKTOP MEDIO (1024px - 1299px) */
+@media (min-width: 1024px) and (max-width: 1299px) {
+    h1 { font-size: 40px; } /* titolo grande */
+    header li a { font-size: 30px; } /* menu più grande */
+}
+
+/* DESKTOP GRANDE (1300px e oltre) */
+@media (min-width: 1300px) {
+    .logo { font-size: 45px; } /* logo più grande */
+    h2, h3 { font-size: 35px; } /* titoli più grandi */
+    header li a { font-size: 35px; } /* menu più grande */
+    .grid_2 p { font-size: 25px; line-height: 1.4; } /* testo sostenibilità più grande */
+}

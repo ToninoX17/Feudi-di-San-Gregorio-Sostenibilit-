@@ -1,0 +1,171 @@
+<!DOCTYPE html> <!-- Dichiarazione del tipo di documento: indica al browser che si tratta di HTML5 -->
+
+<html lang="it"> <!-- Apertura del documento HTML con indicazione della lingua italiana -->
+
+<!-- HEAD - Intestazione del documento (non visibile nella pagina) Contiene: titolo, foglio di stile, impostazioni responsive -->
+<head>
+    <title>Sostenibilità</title> <!-- Titolo della pagina, appare nella scheda del browser -->
+    <link rel="stylesheet" href="style.css"> <!-- Collegamento al foglio di stile esterno -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Visualizzazione corretta su dispositivi mobili -->
+</head>
+
+<!-- BODY - (Corpo del documento visibile nella pagina) -->
+<body>
+
+    <!-- HEADER - Testata principale: logo e menu di navigazione -->
+    <header>
+
+        <a href="index.html" class="logo">Feudi di San Gregorio</a> <!-- Logo cliccabile che riporta alla home -->
+
+        <ul id="menu-principale"> <!-- Menu principale di navigazione -->
+            <li><a href="index.html">Home</a></li> <!-- Ricarica la pagina principale -->
+            <li><a href="sostenibilita.html">Sostenibilità</a></li> <!-- Apre la pagina sulla sostenibilità -->
+            <li><a href="la_cantina.html">La Nostra Cantina</a></li> <!-- Apre la pagina della cantina -->
+        </ul>
+
+    </header> <!-- Fine header -->
+
+    <!-- MAIN - Contenuto principale della pagina -->
+    <main class="container">
+
+        <!-- SEZIONE COVER RIDOTTA SPECIFICA PER LA PAGINA SOSTENIBILITA'  -->
+        <div class="cover_small">
+
+            <div class="cover_small__int"> <!-- Testo sovrapposto all'immagine -->
+                <h1>ABBIAMO A CUORE IL FUTURO DEL PIANETA</h1> <!-- Titolo principale -->
+                <h2>Gli obiettivi di sostenibilità sono per noi, solo un punto di partenza.</h2> <!-- Sottotitolo -->
+            </div>
+
+            <img src="img/casolare.jpg" alt="Casolare irpino "> <!-- Immagine  -->
+
+        </div> <!-- Fine cover -->
+
+        <!-- SEZIONE GRIGLIA - Righe alternate testo + immagine sui temi di sostenibilità -->
+        <div class="grid">
+
+            <!-- Prima riga: testo a sinistra, immagine a destra -->
+            <div class="grid_2">
+                <div class="testo_sostenibilita">
+                    <h3>BILANCIO DI SOSTENIBILITÀ</h3>
+                    <!-- Bottone per download del report di sostenibilità ù -->
+                    <a href="pdf/FEU_Bilancio sostenibilita 2024.pdf" target="_blank" class="btn">Download Report di Sostenibilità</a>
+                    <p>
+                        Feudi di San Gregorio considera la sostenibilità parte integrante del proprio 
+                        modo di fare impresa. Il bilancio di sostenibilità rendiconta i progressi 
+                        dell'azienda verso gli obiettivi dell'Agenda 2030 dell'ONU, con un impegno 
+                        concreto che abbraccia persone, territorio e pianeta.
+                        La qualità dei prodotti nasce da un modello basato su innovazione, passione 
+                        e competenza, sostenuto dalla certificazione Equalitas per il settore vitivinicolo.
+                        L'azienda crede nella trasparenza come strumento per coinvolgere tutti gli 
+                        stakeholder e creare valore condiviso, comunicando il proprio impatto attraverso 
+                        bilanci e relazioni non finanziarie accessibili a tutti.
+                    </p>
+                </div>
+                <div class="immagine_sostenibilita">
+                    <img src="img/imm_sostenibilita.jpg" alt="Paesaggio irpino e sostenibilità"> <!-- Immagine -->
+                </div>
+            </div> <!-- Fine prima riga -->
+
+            <!-- Seconda riga: immagine a sinistra, testo a destra -->
+            <div class="grid_2">
+                <div class="immagine_ambiente">
+                    <img src="img/vista_paese_1.jpg" alt="Vista del territorio irpino"> <!-- Immagine -->
+                </div>
+                <div class="testo_ambiente">
+                    <h3>COMUNITÀ E TERRITORIO</h3>
+                    <p>
+                        Feudi di San Gregorio presta attenzione ai territori che la circondano, 
+                        mantenendo un dialogo costante con i confinanti dei propri vigneti tramite 
+                        questionari periodici, ora distribuiti direttamente durante la vendemmia 
+                        per un rapporto più diretto.
+                        L'azienda è inoltre attivamente presente nella vita culturale e sociale 
+                        dell'Irpinia: nel 2022 ha commissionato una nuova opera all'artista Pietro Ruffo, 
+                        sostenuto la Fondazione San Gennaro con una bottiglia in edizione limitata, 
+                        rinnovato il proprio supporto al festival di musica da camera "I Luoghi della Musica" 
+                        e messo a disposizione degli scout locali spazi e aree verdi aziendali.
+                    </p>
+                </div>
+            </div> <!-- Fine seconda riga -->
+
+            <!-- Terza riga: testo a sinistra, immagine a destra -->
+            <div class="grid_2">
+                <div>
+                    <h3>ENERGIA RINNOVABILE</h3>
+                    <p>
+                        L’Azienda produce energia fotovoltaica a copertura di circa il 40% dei propri fabbisogni e acquista
+                        esclusivamente energia proveniente da fonti rinnovabili.
+                        La modernizzazione degli impianti frigo ha migliorato ulteriormente 
+                        l'efficienza energetica, riducendo i consumi e l'impatto ambientale della produzione.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/Azienda-3.jpg" alt="Struttura innovativa Feudi di San gregorio"> <!-- Immagine -->
+                </div>
+            </div> <!-- Fine terza riga -->
+
+            <!-- Quarta riga: immagine a sinistra, testo a destra -->
+            <div class="grid_2">
+                <div>
+                    <img src="img/le_persone.jpg" alt="Dipendenti di Feudi di San Gregorio"> <!-- Immagine  -->
+                </div>
+                <div>
+                    <h3>LE PERSONE</h3>
+                    <p>
+                        Alla base del successo dei Feudi di San Gregorio vi sono le persone .
+                        L'Azienda di impegna a garfantire un'ambiente di lavoro sano e inclusivo dove 
+                        poter valorizzale l' unicità e dove la diversità viene vista come un risorsa preziosa.
+                        130 dipendenti, di cui il 79% risiede in provincia di Avellino, 
+                        a dimostrazione del forte radicamento nel territorio irpino.
+                        L'azienda promuove formazione continua e rispetto dei diritti umani 
+                        lungo tutta la filiera produttiva.
+                    </p>
+                </div>
+            </div> <!-- Fine quarta riga -->
+
+            <!-- Quinta riga: testo a sinistra, immagine a destra -->
+            <div class="grid_2">
+                <div>
+                    <h3>GESTIONE SOSTENIBILE DEI RIFIUTI </h3>
+                    <p>
+                        Nel 2023 tonnellate di vinaccia sono inviate in distilleria per essere riutilizzate ;
+                        i raspi d'uva vengono trasformati in compostaggio per nutrire i vigneti, chiudendo il ciclo naturale della produzione.
+                        Tonnellate di materiale tra plastica e carta vengono avviate al riciclo, riducendo al minimo l'impatto ambientale dell'imbottigliamento.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/vigneto_2.jpg" alt="Vigneti di Feudi di San Gregorio"> <!-- Immagine vigneto -->
+                </div>
+            </div> <!-- Fine quinta riga -->
+
+            <!-- Sesta riga: solo testo e bottone, senza immagine -->
+            <div class="grid_2">
+                <div>
+                    <h3>ALTRE CERTIFICAZIONI</h3>
+                    <p>
+                        Feudi di San Gregorio opera secondo i più alti standard internazionali 
+                        di qualità e sostenibilità, certificati dagli enti IFS, FSSC 22000, 
+                        EQUALITAS e BIO con ente ICEA.
+                        La Certificazione B Corporation è un marchio concesso in licenza da B Lab, 
+                        ente privato no profit, alle aziende che hanno superato con successo i requisiti richiesti in termini 
+                        di performance sociale e ambientale, responsabilità e trasparenza.
+                        Un percorso di certificazione che conferma l'impegno concreto dell'azienda verso un modello di impresa responsabile.
+                    </p>
+                    <!-- Bottone di download della nota sulla certificazione B Corporation -->
+                    <a href="pdf/B-Corp_Nota-sulla-Certificazione_2024.pdf" target="_blank" class="btn">Download Nota Certificazione B Corp.</a>
+                </div>
+            </div> <!-- Fine sesta riga -->
+
+        </div> <!-- Fine griglia -->
+
+    </main> <!-- Fine contenuto principale -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>FEUDI DI SAN GREGORIO - Società Benefit S.p.A.</p>
+        <p>P.IVA 01753470648 | Sede: Località Cerza Grossa, 83050 Sorbo Serpico (AV)</p> 
+        <a href="https://www.feudi.it" target="_blank">www.feudi.it</a>  <!-- collegamento alla pagina ufficiale aprendo una nuova scheda -->    
+    </footer> <!-- Fine footer -->
+
+</body> <!-- Fine body -->
+
+</html> <!-- Fine documento HTML -->

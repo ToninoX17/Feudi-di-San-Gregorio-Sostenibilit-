@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Dichiarazione del tipo di documento: indica al browser che si tratta di HTML5 -->
+
+<html lang="it"> <!-- Apertura del documento HTML con indicazione della lingua italiana -->
+
+<!-- HEAD - Intestazione del documento (non visibile nella pagina) Contiene: titolo, foglio di stile, impostazioni responsive -->
+<head>
+    <title>La Nostra Cantina</title> <!-- Titolo della pagina, appare nella scheda del browser -->
+    <link rel="stylesheet" href="style.css"> <!-- Collegamento al foglio di stile esterno -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Visualizzazione corretta su dispositivi mobili -->
+</head>
+
+<!-- BODY - Corpo del documento (tutto ciò che è visibile nella pagina) -->
+<body>
+
+    <!-- HEADER - Testata principale: logo e menu di navigazione -->
+    <header>
+
+        <a href="index.html" class="logo">Feudi di San Gregorio</a> <!-- Logo cliccabile che riporta alla home -->
+
+        <ul id="menu-principale"> <!-- Menu principale di navigazione -->
+            <li><a href="index.html">Home</a></li> <!-- Ricarica la pagina principale -->
+            <li><a href="sostenibilita.html">Sostenibilità</a></li> <!-- Apre la pagina sulla sostenibilità -->
+            <li><a href="la_cantina.html">La Nostra Cantina</a></li> <!-- Apre la pagina della cantina -->
+        </ul>
+
+    </header> <!-- Fine header -->
+
+    <!-- MAIN - Contenuto principale della pagina -->
+    <main class="container">
+
+        <!-- SEZIONE COVER - Immagine con titolo e frase aziendale sovrapposti -->
+        <div class="cover">
+
+            <div class="cover__int"> <!-- Testo sovrapposto all'immagine -->
+                <h1>SCOPRI LA NOSTRA CANTINA</h1> <!-- Titolo principale -->
+                <h2>Feudi di San Gregorio è oggi il simbolo del rinascimento enologico del meridione d'Italia.</h2> <!-- Sottotitolo -->
+            </div>
+
+            <img src="img/cantina_1.jpg" alt="Cantina di Feudi di San Gregorio a Sorbo Serpico"> <!-- Immagine della cantina -->
+
+        </div> <!-- Fine cover -->
+
+        <!-- SEZIONE GRIGLIA -->
+        <div class="grid">
+
+            <!-- Colonna 1 -->
+            <div class="col-grid">
+                <h3>L'AZIENDA E LA CANTINA</h3>
+                <p>
+                    Feudi di San Gregorio ha l'obiettivo di valorizzare i grandi vitigni meridionali 
+                    Aglianico, Fiano di Avellino e Greco di Tufo, preservando il patrimonio 
+                    vitivinicolo irpino.
+                    La cantina di Sorbo Serpico è molto più di un luogo produttivo: è concepita come 
+                    un forum culturale, spazio di incontro, riflessione e accoglienza, immerso in un 
+                    paesaggio suggestivo tra giardini di spezie, roseti e luoghi d'acqua.
+                    Il progetto ha coinvolto professionisti di fama mondiale come l'architetto 
+                    giapponese Hikaru Mori per l'unità architettonica, e Massimo e Lella Vignelli, 
+                    icone del design italiano, per interni, arredi ed etichette.
+                    Un luogo dove vino, architettura e cultura si fondono in un'esperienza unica.
+                </p>
+            </div> <!-- Fine colonna 1 -->
+
+            <!-- Colonna 2: visite guidate con bottone di prenotazione -->
+            <div class="col-grid">
+                <h3>LE VISITE GUIDATE</h3>
+                <p>
+                    Un'esperienza che abbraccia i sensi. Attraverso i profumi del nostro giardino, 
+                    delle erbe aromatiche, delle rose, degli alberi da frutta e l'atmosfera unica 
+                    della nostra bottaia, si parte insieme per un percorso dedicato al ciclo dell'uva.
+                    Vivrete tutte le fasi di lavorazione e affinamento dei nostri vini attraverso 
+                    un appassionante percorso che termina con la degustazione guidata di tre etichette.
+                </p>
+                <!-- Bottone che apre il portale di prenotazione in una nuova scheda -->
+                <a href="https://feudi.superbexperience.com/" target="_blank" class="btn">Prenota la tua visita</a>
+            </div> <!-- Fine colonna 2 -->
+
+            <!-- Colonna 3: informazioni di contatto e link a Google Maps -->
+            <div class="col-grid">
+                <h3>CONTATTI</h3>
+                <p>Località Cerza Grossa 83050, Sorbo Serpico (AV)</p> 
+                <p>Tel. +39 0825 986675</p> 
+                <!-- Bottone che apre Google Maps in una nuova scheda -->
+                <a href="https://www.google.it/maps/place/Feudi+di+San+Gregorio/@41.05428,13.3043022,7z/data=!4m9!3m8!1s0x133bd26073b2949d:0x415cb50c37f254a5!5m2!4m1!1i2!8m2!3d40.9111904!4d14.8675003!16s%2Fg%2F1tdlr7g6?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn">Dove Trovarci</a>
+            </div> <!-- Fine colonna 3 -->
+
+        </div> <!-- Fine griglia -->
+
+    </main> <!-- Fine contenuto principale -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>FEUDI DI SAN GREGORIO - Società Benefit S.p.A.</p>
+        <p>P.IVA 01753470648 | Sede: Località Cerza Grossa, 83050 Sorbo Serpico (AV)</p> 
+        <a href="https://www.feudi.it" target="_blank">www.feudi.it</a>  <!-- collegamento alla pagina ufficiale aprendo una nuova scheda -->    
+    </footer> <!-- Fine footer -->
+
+</body> <!-- Fine body -->
+
+</html> <!-- Fine documento HTML -->
