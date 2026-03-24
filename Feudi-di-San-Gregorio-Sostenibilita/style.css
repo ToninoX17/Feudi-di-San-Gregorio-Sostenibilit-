@@ -115,8 +115,8 @@ header li a { font-size: 20px; padding: 10px; }
 .grid_2 p { font-size: 20px; line-height: 1.4; }
 
 /* Sfondo alternato per le righe della pagina sostenibilità */
-.grid_2:nth-child(odd)  { background-color: #494949b9; } /* righe dispari  */
-.grid_2:nth-child(even) { background-color: #2e2e2eb0; } /* righe pari */
+.grid_2:nth-child(odd)  { background-color: #787777b9; } /* righe dispari  */
+.grid_2:nth-child(even) { background-color: #5b7660b0; } /* righe pari */
 .grid_2 {border-radius: 8px;} /* angoli arrotondati */
 
 
